@@ -12,5 +12,6 @@ namespace DatingApp.API.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { } //konstruktor zdedeny
         
         public DbSet<Value> Values { get; set; } //pro tabulku v SQL
+        public DbSet<User> Users { get; set; }
     }
 }
