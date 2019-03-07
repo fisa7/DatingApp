@@ -20,6 +20,7 @@ namespace DatingApp.API.Controllers
             this.context = context;
         }
         // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues() //asynchronni kvuli zpracovani pozadavku od vice uzivatelu najednou, kdyby bylo synchronni, cekalo by se na vykonani predchozich
         {
